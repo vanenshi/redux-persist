@@ -5,7 +5,8 @@ import type {
   PersistorState,
 } from './types'
 
-import { AnyAction, createStore, Store } from 'redux'
+import type { AnyAction, Store } from 'redux';
+import { createStore } from 'redux'
 import { FLUSH, PAUSE, PERSIST, PURGE, REGISTER, REHYDRATE } from './constants'
 
 type BoostrappedCb = () => any;

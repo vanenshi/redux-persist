@@ -5,7 +5,7 @@
 */
 
 import type { PersistConfig } from '../types'
-import { KeyAccessState } from '../types'
+import type { KeyAccessState } from '../types'
 
 export default function autoMergeLevel1<S extends KeyAccessState>(
   inboundState: S,

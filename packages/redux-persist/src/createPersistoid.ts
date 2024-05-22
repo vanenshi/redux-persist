@@ -2,7 +2,7 @@
 import { KEY_PREFIX } from './constants'
 
 import type { Persistoid, PersistConfig } from './types'
-import { KeyAccessState } from './types'
+import type { KeyAccessState } from './types'
 
 export default function createPersistoid(config: PersistConfig<any>): Persistoid {
   // defaults

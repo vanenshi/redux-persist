@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/ban-types */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { REHYDRATE, REGISTER } from './constants'
+import type { REHYDRATE, REGISTER } from './constants'
 
-import { StoreEnhancer } from "redux";
+import type { StoreEnhancer } from "redux";
 
 export interface PersistState {
   version: number;

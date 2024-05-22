@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Storage } from "../../src/types"
+import type { Storage } from "../../src/types"
 
 interface StateObj {
   [key: string]: any;
