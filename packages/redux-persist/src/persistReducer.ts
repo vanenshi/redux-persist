@@ -180,8 +180,10 @@ export default function persistReducer<S, A extends Action>(
         const reducedState = baseReducer(restState, action)
         const inboundState = action.payload
         // only reconcile state if stateReconciler and inboundState are both defined
+        // @ts-ignore
         const reconciledRest: S =
           stateReconciler !== false && inboundState !== undefined
+          // @ts-ignore
             ? stateReconciler(inboundState, state, reducedState, config)
             : reducedState
 

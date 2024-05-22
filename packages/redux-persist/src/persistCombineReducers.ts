@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Action, AnyAction, CombinedState, combineReducers, Reducer, ReducersMapObject } from 'redux'
+import type { Action, AnyAction, CombinedState, Reducer, ReducersMapObject } from 'redux';
+import { combineReducers } from 'redux'
 import persistReducer from './persistReducer'
 import autoMergeLevel2 from './stateReconciler/autoMergeLevel2'
 

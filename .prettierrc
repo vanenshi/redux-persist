@@ -1,4 +1,4 @@
-parser: "typescript"
-semi: false
-trailingComma: es5
-singleQuote: true
+{
+  "semi": false,
+  "singleQuote": true
+}
